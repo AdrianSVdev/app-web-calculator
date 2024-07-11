@@ -1,0 +1,36 @@
+.button {
+  place-self: center;
+  aspect-ratio: 1 / 1;
+  width: 3.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--bg-calculator);
+  font-size: 1.6rem;
+  font-weight: 600;
+  user-select: none;
+
+  transition: background-color 1s, color 1s;
+}
+
+.button:active:not(.equal) {
+  /* transform: scale(0.8); */
+  background-color: var(--bg-button-active);
+  transition: background-color 10ms;
+}
+
+.button.number {
+  color: var(--text-button-number);
+}
+
+.button.operator {
+  color: var(--text-button-operator);
+}
+
+.equal {
+  place-self: center;
+  aspect-ratio: 1 / 1;
+  width: 3.5rem;
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+}

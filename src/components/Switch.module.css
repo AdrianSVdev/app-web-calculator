@@ -1,0 +1,29 @@
+.switch {
+  grid-column: 1/5;
+  place-self: center;
+}
+
+.toogle {
+  background-color: rgb(150, 150, 150);
+  width: 4.5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.slider {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: rgb(230, 230, 230);
+  /* padding: 0; */
+  margin: 4px;
+  transform: translateX(0);
+  transition: 500ms ease-out;
+}
+
+.check-switch:checked ~ .slider {
+  transform: translateX(2.5rem);
+}
